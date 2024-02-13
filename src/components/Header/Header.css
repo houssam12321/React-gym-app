@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 13rem;
+    height: 8rem;
+    margin-left: 3rem;
+}
+.header-menu{
+    font-weight: bold;
+}
+@media screen and (max-width: 768px){
+    .logo{
+        width: 7rem;
+        height: 5rem;
+        margin-left: 0;
+    }
+    .header>:nth-child(2){
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+        
+    }
+    .header-menu{
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+    
+    }
+
+
+}
